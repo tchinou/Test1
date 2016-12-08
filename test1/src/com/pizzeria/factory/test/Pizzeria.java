@@ -4,12 +4,19 @@ import  com.pizzeria.factory.pizza.Pizza;
 
 public class Pizzeria {
 	
+	int id;
+	String nom, ville;
+	int code;
+	
 	private FabriquePizza fabrique;
-
-	public Pizzeria() {
+	
+	public Pizzeria(int id, String nom, String ville, int code) {
 		super();
+		this.id=id;
+		this.nom=nom;
+		this.ville=ville;
+		this.code=code;
 	}
-
 	public Pizzeria(FabriquePizza fabrique) {
 		super();
 		this.fabrique = fabrique;
@@ -25,4 +32,26 @@ public class Pizzeria {
 		return p;
 		
 	}
+
+	public int getId() {
+		return id;
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public String getVille() {
+		return ville;
+	}
+
+	public int getCode() {
+		return code;
+	}
+
+	public FabriquePizza getFabrique() {
+		return fabrique;
+	}
+
+	
 }
