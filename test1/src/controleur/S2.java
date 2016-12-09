@@ -45,9 +45,11 @@ public class S2 extends HttpServlet {
 		
 		String article = request.getParameter("article");
 		String prix = request.getParameter("prix");
+		//c'est là que l'appel vers le modéle se fait 
 		GestionPanier cp = (ComposantPanier) session.getAttribute("service");
 		
 		Produit p = new Produit (1,article, Integer.parseInt(prix));
+		//Et ici précisément l'insertion
 		cp.insertProduit(p);
 		
 		

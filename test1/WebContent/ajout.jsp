@@ -20,6 +20,11 @@ Article : <input type="text" name="article"> <br>
 Prix : <input type="text" name="prix"> <br>
 <input type="submit" value="Ajouter un produit"><br>
 </form>
+<form action="S3" method="post">
+
+<input type="submit" value="Selectionner Pizzeria"><br>
+
+</form>
 
 <a href="panier.jsp">Voir panier</a>
 

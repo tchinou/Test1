@@ -29,4 +29,24 @@
     <servlet-name>ServletIndexJSP</servlet-name>
     <url-pattern>/ServletIndexJSP</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletPizzeria</display-name>
+    <servlet-name>ServletPizzeria</servlet-name>
+    <servlet-class>controleur.ServletPizzeria</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletPizzeria</servlet-name>
+    <url-pattern>/ServletPizzeria</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>S3</display-name>
+    <servlet-name>S3</servlet-name>
+    <servlet-class>controleur.S3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>S3</servlet-name>
+    <url-pattern>/S3</url-pattern>
+  </servlet-mapping>
 </web-app>
