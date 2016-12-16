@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+          <hibernate-mapping>
+          
+          	<class name="beans.StudentHibernateNaveen" table="Student" schema="root">
+          	
+          	<id name="idS" column="Sid"></id>
+          	
+          	<property name="nameS" column="Sname"/>
+          	
+          	<property name="emailS" column="Semail"/>
+          	
+          	<property name="markS" column="Smark" />
+          	
+          	</class>
+          </hibernate-mapping>
