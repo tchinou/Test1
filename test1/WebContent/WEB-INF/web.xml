@@ -9,6 +9,8 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  
   <servlet>
     <description></description>
     <display-name>S2</display-name>
@@ -48,5 +50,17 @@
   <servlet-mapping>
     <servlet-name>S3</servlet-name>
     <url-pattern>/S3</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  			<servlet-name>helloWorld</servlet-name>
+  			<servlet-class>org.springframework.web.servlet.DispatcherDervlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  		<servlet-name>helloWorld</servlet-name>
+  		<url-pattern>*.ds</url-pattern>
   </servlet-mapping>
 </web-app>
